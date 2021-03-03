@@ -1,0 +1,71 @@
+// main: ..//style.less
+.b2 {
+    background: url(.././images/dest/allbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #222222;
+    padding: 100px 0;
+
+    .b2__wrapper {
+        color: @white;
+        width: 800px;
+        margin: 186px auto;
+
+        h2 {
+            font-size: 50px;
+            line-height: 48px;
+            font-family: "MuseoSansBlack";
+            margin-bottom: 19px;
+        }
+
+        p {
+            font-family: "MuseoSansLight";
+            line-height: 31px;
+            font-size: 20px;
+        }
+
+    }
+}
+
+@media (max-width:768px) {
+    .b2 {
+        .b2__wrapper {
+            width: 600px;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b2 {
+        padding: 30px 0;
+
+        .b2__wrapper {
+            margin: 50px auto;
+            width: 400px;
+            h2{
+                font-size: 24px;
+            }
+            p{
+                font-size: 16px;
+                line-height: normal;
+            }
+        }
+
+    }
+}
+
+@media (max-width:375px) {
+    .b2 {
+        .b2__wrapper {
+            width: 350px;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .b2 {
+        .b2__wrapper {
+            width: 280px;
+        }
+    }
+}

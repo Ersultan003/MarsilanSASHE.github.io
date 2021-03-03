@@ -1,0 +1,122 @@
+// main:..//style.less
+.b5 {
+    padding: 30px 0;
+
+    .b5__wrapper {
+        .b5__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+
+            .b5__left {
+                width: 50%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .b5__right {
+                width: 45%;
+
+                h2 {
+                    font-size: 36px;
+                    line-height: 48px;
+                    color: @blue;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    color: #6F7CB2;
+                    font-size: 19px;
+                    line-height: 28px;
+                    font-family: "MuseoSansLight";
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .b5 {
+
+        .container {
+            max-width: 650px;
+        }
+
+        .b5__wrapper {
+            width: 650px;
+
+            .b5__inner {
+                flex-direction: column;
+
+                .b5__left {
+                    width: auto;
+                }
+
+                .b5__right {
+                    width: auto;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width:768px) {
+    .b5 {
+        .b5__wrapper {
+            .b5__inner {
+                flex-direction: column;
+                margin-bottom: 50px;
+
+                .b5__item {
+                    text-align: center;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width:425px) {
+    .b5 {
+        .container {
+            width: 350px;
+        }
+
+        .b5__wrapper {
+            width: 350px;
+
+            .b5__inner {
+                flex-direction: column;
+                margin-bottom: 50px;
+
+                .b5__item {
+                    text-align: center;
+                }
+
+                .b5__right {
+                    h2 {
+                        font-size: 24px;
+                        margin: 20px 0;
+                        line-height: normal;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
